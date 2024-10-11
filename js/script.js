@@ -18,7 +18,7 @@ function ourCourse() {
       console.log("Clicked Course:", clickedText);
 
       // Find the corresponding course detail
-      let courseDetails = document.querySelector(".course-details .container .wrapper");
+      let courseDetails = document.querySelector(".course-details .container .wrapper .items .item");
       let courseItems = document.querySelectorAll(".course-details .item");
       let found = false;
 
@@ -95,8 +95,7 @@ function textmonialSlider() {
             1024: {
                 slidesPerView: 2
             },
-    
-        }
+        },
     
       });
 }
@@ -123,6 +122,14 @@ function ourPlacemetStudent () {
       el: ".swiper-pagination",
       dynamicBullets: true,
     },
+    breakpoints: {
+     360: {
+          slidesPerView: 1
+      },
+      1400: {
+          slidesPerView: 3
+      },
+  }
   });
 }
 ourPlacemetStudent()
@@ -143,6 +150,11 @@ function slideGallery () {
       delay: 2000,
       disableOnInteraction: false,
     },
+    breakpoints: {
+      360: {
+          slidesPerView: 1
+      }
+  }
   });
 
 }
