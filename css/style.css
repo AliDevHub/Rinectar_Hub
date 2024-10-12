@@ -1015,6 +1015,9 @@ footer .boxs .box ul.follow-us li a i{
     header .container .logo{
         width: 145px;
     }
+    header .container nav{
+        display: none;
+    }
     .hero-section {
         min-height: 75vh;
         padding-top: 10rem;
