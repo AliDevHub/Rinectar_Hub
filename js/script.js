@@ -127,7 +127,7 @@ function ourPlacemetStudent () {
           slidesPerView: 1
       },
       1400: {
-          slidesPerView: 3
+          slidesPerView: 4
       },
   }
   });
@@ -150,11 +150,11 @@ function slideGallery () {
       delay: 2000,
       disableOnInteraction: false,
     },
-    breakpoints: {
-      360: {
-          slidesPerView: 1
-      }
-  }
+  //   breakpoints: {
+  //     360: {
+  //         slidesPerView: 1
+  //     }
+  // }
   });
 
 }

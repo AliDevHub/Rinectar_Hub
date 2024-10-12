@@ -1020,7 +1020,7 @@ footer .boxs .box ul.follow-us li a i{
     }
     .hero-section {
         min-height: 78vh;
-        padding-top: 10rem;
+        padding-top: 9rem;
     }
     .hero-section .first-para{
         font-size: 0.9rem;
@@ -1033,6 +1033,7 @@ footer .boxs .box ul.follow-us li a i{
     }
     .hero-section .second-para {
         font-size: 0.9rem;
+        padding-top: 0.5rem;
     }
     .hero-section .try-it-now {
         padding: 0.8rem;
@@ -1069,7 +1070,7 @@ footer .boxs .box ul.follow-us li a i{
         margin-bottom: 0;
     }
     .course-details {
-        margin-top: 29rem;
+        margin-top: 35rem;
         padding: 5.5rem 0 2rem;
     }
     .course-details h2 {
@@ -1096,6 +1097,7 @@ footer .boxs .box ul.follow-us li a i{
         display: flex;
         justify-content: space-between;
         border-radius: 6px;
+        align-items: center;
     }
     .call-back {
        padding: 0;
