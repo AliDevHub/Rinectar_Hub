@@ -68,9 +68,10 @@ body.addEventListener("mousemove", (dets) => {
 })
 
 function textmonialSlider() {
-    new Swiper('.slide-wrapper2', {
+    new Swiper('.slide-wrapper', {
         loop: true,
         spaceBetween: 30,
+        slidesPerView: 2,
         autoplay: {
             delay: 5000,
             disableOnInteraction: false,
@@ -106,7 +107,7 @@ function ourPlacemetStudent () {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: "auto",
+    slidesPerView: 3,
     coverflowEffect: {
       rotate: 50,
       stretch: 0,
@@ -123,15 +124,18 @@ function ourPlacemetStudent () {
       dynamicBullets: true,
     },
     breakpoints: {
-     360: {
+      0: {
           slidesPerView: 1
       },
-      1400: {
+      768: {
+          slidesPerView: 2
+      },
+      1024: {
           slidesPerView: 3
       },
-  }
+    }
   });
-}
+};
 ourPlacemetStudent()
 
 function slideGallery () {
@@ -149,12 +153,7 @@ function slideGallery () {
     autoplay: {
       delay: 2000,
       disableOnInteraction: false,
-    },
-  //   breakpoints: {
-  //     360: {
-  //         slidesPerView: 1
-  //     }
-  // }
+    }
   });
 
 }

@@ -591,24 +591,25 @@ header .container nav .call-me a{
 }
 
 
-.textmonials.swiper .slide-wrapper2{
+.textmonials.swiper .slide-wrapper{
     width: 65%;
     padding-top: 90px;
     overflow: hidden;
 }
-.textmonials.swiper .swiper-pagination2{
-    bottom: 50px;
+.swiper-pagination2 {
+    width: 80px;
     position: absolute;
-    left: 63%;
+    bottom: 40px !important;
+    left: 64% !important;
 }
-.textmonials.swiper .swiper-pagination2 .swiper-pagination-bullet{
+.textmonials .swiper-pagination2 .swiper-pagination-bullet{
     width: 8px;
     height: 8px;
     border-radius: 10px;
     background-color: #ff9020;
     opacity: 0.6;
 }
-.textmonials.swiper .swiper-pagination2 .swiper-pagination-bullet-active{
+.textmonials .swiper-pagination2 .swiper-pagination-bullet-active{
     opacity: 1;
 }
 .textmonials .container{
@@ -737,8 +738,6 @@ header .container nav .call-me a{
 .textmonials .text-profile .text-profil-content span{
     color: #666;
 }
-
-
 
 /* ====================Our Placement Student======================= */
 
@@ -1211,7 +1210,7 @@ footer .boxs .box ul.follow-us li a i{
         width: 100%;
     }
     .swiper-wrapper {
-        gap: 16px;
+        gap: 0;
     }
     .textmonials.swiper .riviews-section .images {
         margin-left: 20px;
@@ -1237,18 +1236,20 @@ footer .boxs .box ul.follow-us li a i{
     .textmonials p.lorem-text {
         margin-bottom: 1.5rem;
     }
-    .textmonials.swiper .slide-wrapper2 {
-        width: 100%;
+    .textmonials .slide-wrapper {
+        width: 100% !important;
         padding-top: 30px;
     }
     .textmonials .text-slide .text-box {
-        width: 100%;
+        width: 100% !important;
         margin-right: 0;
         margin-top: 20px;
     }
-    .textmonials.swiper .swiper-pagination2 {
-        bottom: 15px;
-        left: 53%;
+    .swiper-pagination2 {
+        width: 80px;
+        position: absolute;
+        bottom: 15px !important;
+        left: 51% !important;
     }
     .textmonials .text-btn-group {
         top: 320px;
