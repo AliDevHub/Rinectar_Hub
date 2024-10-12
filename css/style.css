@@ -352,18 +352,18 @@ header .container nav .call-me a{
 }
 .call-location .call{
     gap: 20px;
-    width: 35%;
+    width: 38%;
 }
 .call-location .call .elips{
     background: #003c58;
 }
 .call-location .location {
     gap: 20px;
-    width: 65%;
+    width: 59%;
 }
 .call-location .location .elips{
     gap: 20px;
-    width: 74.5px
+    width: 32%
 }
 .call-location .call .e-text h3{
     color: #222;
@@ -1019,7 +1019,7 @@ footer .boxs .box ul.follow-us li a i{
         display: none;
     }
     .hero-section {
-        min-height: 78vh;
+        min-height: 68vh;
         padding-top: 9rem;
     }
     .hero-section .first-para{
@@ -1197,9 +1197,11 @@ footer .boxs .box ul.follow-us li a i{
     .our-p-student h2 {
         font-size: 2rem;
         text-align: left;
+        padding-inline: 1rem;
     }
     .our-p-student p{
         text-align: left;
+        padding-inline: 1rem;
     }
     .our-p-student .container {
         padding: 0 0rem 10rem 0rem;
