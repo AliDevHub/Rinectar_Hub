@@ -1020,7 +1020,7 @@ footer .boxs .box ul.follow-us li a i{
         display: none;
     }
     .hero-section {
-        min-height: 68vh;
+        min-height: 65vh;
         padding-top: 9rem;
     }
     .hero-section .first-para{
@@ -1251,7 +1251,7 @@ footer .boxs .box ul.follow-us li a i{
         left: 53%;
     }
     .textmonials .text-btn-group {
-        top: 385px;
+        top: 320px;
         left: 15px;
     }
     .textmonials .back {
