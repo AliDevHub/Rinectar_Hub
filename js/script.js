@@ -127,7 +127,7 @@ function ourPlacemetStudent () {
           slidesPerView: 1
       },
       1400: {
-          slidesPerView: 4
+          slidesPerView: 3
       },
   }
   });

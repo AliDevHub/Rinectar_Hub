@@ -152,7 +152,7 @@ header .container nav .call-me a{
 .video-courses{
     position: absolute;
     width: 100%;
-    top: 65%;
+    top: 80%;
 }
 
 .video-courses .container{
@@ -204,7 +204,7 @@ header .container nav .call-me a{
 .course-details{
     width: 100%;
     padding: 5rem 0;
-    margin-top: 18.5rem;
+    margin-top: 28rem;
     /* background-color: #003c58; */
 }
 
@@ -235,7 +235,7 @@ header .container nav .call-me a{
     background: white;
     border-radius: 24px;
     overflow: hidden;
-    width: 325px;
+    width: 277px;
     transition: all 0.3s ease;
 
     box-shadow: 0px 0px 15px 10px #5252521a;
@@ -268,7 +268,7 @@ header .container nav .call-me a{
 
 .course-details .wrapper .items .item a h3{
     color: #222;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 0.5rem 0;
     transition: all 0.3s ease;
@@ -287,7 +287,7 @@ header .container nav .call-me a{
     color: #fff;
     background: #ff9020;
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: left;
     padding: 0.8rem 2rem; 
     display: block;
@@ -463,14 +463,14 @@ header .container nav .call-me a{
     /* align-items: center; */
 }
 .our-gallery .left{
-    width: 36%;
+    width: 33%;
     flex-wrap: wrap;
     gap: 30px;
 }
 
 .our-gallery .left .box{
     width: 140px;
-    height: 105px;
+    height: 97px;
     border-radius: 6px;
     overflow: hidden;
 }
