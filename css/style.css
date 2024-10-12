@@ -432,7 +432,7 @@ header .container nav .call-me a{
     font-size: 1rem;
     display: inline-block;
     color: white;
-    margin-top: 3.3rem;
+    margin-top: 1.3rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -620,6 +620,7 @@ header .container nav .call-me a{
 .textmonials .text-btn-group {
     top: 115px;
     position: absolute;
+    left: -17px;
 }
 
 .textmonials h3{
@@ -1250,7 +1251,8 @@ footer .boxs .box ul.follow-us li a i{
         left: 53%;
     }
     .textmonials .text-btn-group {
-        top: 426px;
+        top: 385px;
+        left: 15px;
     }
     .textmonials .back {
         left: 0;
