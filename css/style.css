@@ -1019,11 +1019,13 @@ footer .boxs .box ul.follow-us li a i{
         display: none;
     }
     .hero-section {
-        min-height: 71vh;
+        min-height: 78vh;
         padding-top: 10rem;
     }
     .hero-section .first-para{
         font-size: 0.9rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
     .hero-section h1 {
         font-size: 1.4rem;
@@ -1033,16 +1035,16 @@ footer .boxs .box ul.follow-us li a i{
         font-size: 0.9rem;
     }
     .hero-section .try-it-now {
-        padding: 1rem;
+        padding: 0.8rem;
         width: 100%;
     }
     .video-courses{
-        top: 82%;
+        top: 100%;
     }
     .video-courses .container {
-        border-radius: 24px;
+        border-radius: 0px;
         flex-direction: column;
-        border: 1px solid #222;
+        border: 0;
     }
     .video-courses .container{
         height: auto
