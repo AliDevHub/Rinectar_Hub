@@ -1019,7 +1019,7 @@ footer .boxs .box ul.follow-us li a i{
         display: none;
     }
     .hero-section {
-        min-height: 75vh;
+        min-height: 71vh;
         padding-top: 10rem;
     }
     .hero-section .first-para{
@@ -1068,7 +1068,7 @@ footer .boxs .box ul.follow-us li a i{
     }
     .course-details {
         margin-top: 29rem;
-        padding: 7rem 0 2rem;
+        padding: 5.5rem 0 2rem;
     }
     .course-details h2 {
         font-size: 2rem;
