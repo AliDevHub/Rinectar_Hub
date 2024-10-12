@@ -69,8 +69,6 @@ header .container .logo{
     width: 250px;
 }
 header .container .logo a{
-    color: white;
-    font-size: 2rem;
     display: block;
 }
 header .container .logo a img{
@@ -1002,21 +1000,31 @@ footer .boxs .box ul.follow-us li a i{
 
 
 @media (max-width: 360px) {
-
+    #cursor{
+        display: none;
+    }
     .container{
         width: 100%;
     }
     header{
-        display: none;
+        padding: 1.5rem 1rem;
+    }
+    header .container{
+        padding: 1rem;
+    }
+    header .container .logo{
+        width: 145px;
     }
     .hero-section {
-        min-height: 86vh;
+        min-height: 75vh;
+        padding-top: 10rem;
     }
     .hero-section .first-para{
         font-size: 0.9rem;
     }
     .hero-section h1 {
         font-size: 1.4rem;
+        line-height: normal;
     }
     .hero-section .second-para {
         font-size: 0.9rem;
@@ -1041,7 +1049,7 @@ footer .boxs .box ul.follow-us li a i{
     }
 
     .video-courses .container .courses {
-        padding: 0rem 1rem;
+        padding: 0rem 1rem 1rem;
         background: transparent;
         width: 100%;
     }
@@ -1052,12 +1060,20 @@ footer .boxs .box ul.follow-us li a i{
         font-size: 1.1rem;
         border: 1px solid #000000;
     }
+    .video-courses .container .courses ul li:last-child{
+        margin-bottom: 0;
+    }
     .course-details {
         margin-top: 29rem;
-        padding: 5rem 0 2rem;
+        padding: 7rem 0 2rem;
     }
     .course-details h2 {
         font-size: 2rem;
+        text-align: left;
+    }
+    .course-details p{
+        text-align: left;
+        padding: 0.6rem 0;
     }
     .course-details .wrapper .items {
         margin-top: 1rem;
@@ -1068,6 +1084,13 @@ footer .boxs .box ul.follow-us li a i{
     }
     .course-details .wrapper .items .item a .thumbnail {
         border-radius: 8px;
+    }
+    .course-details .wrapper .items .item a.duration {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 6px;
     }
     .call-back {
        padding: 0;
@@ -1099,6 +1122,9 @@ footer .boxs .box ul.follow-us li a i{
     }
     .call-back .call-text h3 {
         font-size: 1.8rem;
+    }
+    .call-back .call-text .location-text h3 {
+        font-size: 1rem;
     }
     .call-back .call-text h4 {
         padding: 0.5rem 0;
@@ -1137,17 +1163,19 @@ footer .boxs .box ul.follow-us li a i{
         gap: 20px;
     }
     .our-gallery .left .box {
-        width: 154px;
+        width: 46%;
         height: 110px;
         border-radius: 4px;
+    }
+    .our-gallery .right .swiper-slide {
+        height: 210px;
     }
     .our-gallery .right {
         width: 100%;
         height: 210px;
     }
     .our-gallery .swiper-pagination {
-        top: 100%;
-        right: 45%;
+        display: none;
     }
     .swiper-pagination {
         position: absolute;
@@ -1157,16 +1185,26 @@ footer .boxs .box ul.follow-us li a i{
         z-index: 10;
     }
     .our-p-student {
-        padding: 1rem 0;
+        padding: 1rem;
     }
     .our-p-student h2 {
         font-size: 2rem;
+        text-align: left;
+    }
+    .our-p-student p{
+        text-align: left;
     }
     .our-p-student .container {
-        padding: 0 1rem 10rem 1rem;
+        padding: 0 0rem 10rem 0rem;
+    }
+    .our-p-student .student-content{
+        width: 100%;
     }
     .swiper-wrapper {
         gap: 16px;
+    }
+    .textmonials.swiper .riviews-section .images {
+        margin-left: 20px;
     }
     .our-p-student .student-content .content p {
         font-size: 0.8rem;
@@ -1195,6 +1233,8 @@ footer .boxs .box ul.follow-us li a i{
     }
     .textmonials .text-slide .text-box {
         width: 100%;
+        margin-right: 0;
+        margin-top: 20px;
     }
     .textmonials.swiper .swiper-pagination2 {
         bottom: 15px;
@@ -1221,6 +1261,17 @@ footer .boxs .box ul.follow-us li a i{
     }
     .chanel h3{
         font-size: 1.5rem;
+    }
+    #moving-box .move {
+        width: 200px;
+    }
+    #moving-box .move img {
+        width: 20%;
+        height: auto;
+    }
+    
+    #moving-box .move p {
+        font-size: 1rem;
     }
     footer .boxs {
         gap: 0px;
