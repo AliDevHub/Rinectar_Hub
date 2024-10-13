@@ -940,7 +940,7 @@ footer .boxs .box h2{
     font-weight: 600;
 }
 footer .boxs .box p{
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: white;
     font-weight: 400;
     padding-bottom: 1.5rem;
@@ -951,7 +951,7 @@ footer .boxs .box ul.course{
 }
 footer .boxs .box ul.course li a{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding-bottom: 1rem;
 }
 
@@ -961,8 +961,8 @@ footer .boxs .box ul.follow-us{
     margin-top: 0;
 }
 footer .boxs .box ul.follow-us li{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -972,7 +972,7 @@ footer .boxs .box ul.follow-us li{
 }
 footer .boxs .box ul.follow-us li a i{
     color: white;
-    font-size: x-large;
+    font-size: 24px;
 }
 .footer-logo{
     width: 100%;
@@ -999,7 +999,7 @@ footer .boxs .box ul.follow-us li a i{
 
 
 
-@media (max-width: 360px) {
+@media (max-width: 430px) {
     #cursor{
         display: none;
     }
@@ -1098,6 +1098,7 @@ footer .boxs .box ul.follow-us li a i{
         justify-content: space-between;
         border-radius: 6px;
         align-items: center;
+        margin-bottom: 0;
     }
     .call-back {
        padding: 0;
@@ -1125,7 +1126,7 @@ footer .boxs .box ul.follow-us li a i{
     }
     .call-back .call-text {
         width: 100%;
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
     .call-back .call-text h3 {
         font-size: 1.8rem;
@@ -1204,10 +1205,11 @@ footer .boxs .box ul.follow-us li a i{
         padding-inline: 1rem;
     }
     .our-p-student .container {
-        padding: 0 0rem 10rem 0rem;
+        padding: 0 1rem 10rem 1rem;
     }
     .our-p-student .student-content{
         width: 100%;
+        margin-top: 2rem;
     }
     .swiper-wrapper {
         gap: 0;
@@ -1238,7 +1240,8 @@ footer .boxs .box ul.follow-us li a i{
     }
     .textmonials .slide-wrapper {
         width: 100% !important;
-        padding-top: 30px;
+        padding-top: 0 !important;
+        padding-bottom: 50px;
     }
     .textmonials .text-slide .text-box {
         width: 100% !important;
@@ -1254,6 +1257,7 @@ footer .boxs .box ul.follow-us li a i{
     .textmonials .text-btn-group {
         top: 320px;
         left: 15px;
+        display: none;
     }
     .textmonials .back {
         left: 0;
