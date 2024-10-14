@@ -588,6 +588,7 @@ header .container nav .call-me a{
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 0.9rem;
+    margin-bottom: 0;
 }
 
 
@@ -821,10 +822,6 @@ header .container nav .call-me a{
 
 .chanel{
     width: 100%;
-    /* background: url(/images/Screenshot_2024-10-10_150033.png.png);
-    background-position: center;
-    background-size: cover; */
-    height: 100%;
     padding: 3rem 0;
     background: #ff9020;
 }
@@ -837,55 +834,37 @@ header .container nav .call-me a{
 
 .chanel #moving-box {
     display: flex;
-    gap: 30px;
-    overflow: hidden;
-    margin-top: 2.5vw;
+    gap: 20px;
+    cursor: pointer;
     position: relative;
+    overflow: hidden;
 }
 
-#moving-box .move {
+.chanel #moving-box .box{
+    animation: 20s slide infinite linear;
     display: flex;
     align-items: center;
     gap: 20px;
-    width: 235px;
+
+}
+.chanel #moving-box .box a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 220px;
     background: white;
-    animation-name: mobe;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    padding: 0px 20px 0 0;
     border-radius: 4px;
     overflow: hidden;
 }
-#moving-box .box{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 30px;
+.chanel #moving-box .box a img{
+    width: 60px;
 }
 
-#moving-box .move p{
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-    gap: 20px;
+.chanel #moving-box .box a p{
     color: #111;
-    padding-right: 10px;
+    font-size: 1.1rem;
     font-weight: 500;
-
-}
-#moving-box .move img {
-    width: 25%;
-    height: 100%;
-}
-
-@keyframes mobe {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
 }
 
 #left-blur {
@@ -908,6 +887,14 @@ header .container nav .call-me a{
     z-index: 1;
 }
 
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
 
 
 /* =========================Footer=========================== */
@@ -1019,7 +1006,7 @@ footer .boxs .box ul.follow-us li a i{
         display: none;
     }
     .hero-section {
-        min-height: 65vh;
+        min-height: 60vh;
         padding-top: 9rem;
     }
     .hero-section .first-para{
@@ -1129,13 +1116,24 @@ footer .boxs .box ul.follow-us li a i{
         padding: 1rem 0;
     }
     .call-back .call-text h3 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .call-back .call-text .location-text h3 {
         font-size: 1rem;
     }
     .call-back .call-text h4 {
         padding: 0.5rem 0;
+    }
+
+    .call-location .elips {
+        width: 48px !important;
+        height: 48px !important;
+    }
+    .call-location .location-text p{
+        font-size: 0.8rem;
+    }
+    .call-location .elips i {
+        font-size: 1rem;
     }
     .call-location {
         margin-top: 1rem;
@@ -1196,8 +1194,9 @@ footer .boxs .box ul.follow-us li a i{
         padding: 1rem 0;
     }
     .our-p-student h2 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-align: left;
+        margin-bottom: 10px;
         padding-inline: 1rem;
     }
     .our-p-student p{
@@ -1220,6 +1219,7 @@ footer .boxs .box ul.follow-us li a i{
     .our-p-student .student-content .content p {
         font-size: 0.8rem;
         color: #111;
+        padding-inline: 0;
     }
     .textmonials.swiper {
         padding: 30px 0;
@@ -1251,7 +1251,7 @@ footer .boxs .box ul.follow-us li a i{
     .swiper-pagination2 {
         width: 80px;
         position: absolute;
-        bottom: 15px !important;
+        bottom: 35px !important;
         left: 51% !important;
     }
     .textmonials .text-btn-group {
@@ -1290,7 +1290,7 @@ footer .boxs .box ul.follow-us li a i{
         font-size: 1rem;
     }
     footer .boxs {
-        gap: 0px;
+        gap: 25px;
         flex-direction: column;
     }
     footer .boxs .box {
@@ -1298,11 +1298,17 @@ footer .boxs .box ul.follow-us li a i{
     }
     footer .boxs .box h2 {
         font-size: 1.8rem;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
         font-weight: 500;
+    }
+    footer .boxs .box p{
+        padding-bottom: 0;
     }
     .footer-logo img {
         width: 50%;
+    }
+    footer .boxs .box .mobile{
+        margin-bottom: 0;
     }
     .copy-right {
         padding: 1rem 0;
