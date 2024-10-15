@@ -73,7 +73,7 @@ function textmonialSlider() {
         spaceBetween: 30,
         slidesPerView: 2,
         autoplay: {
-            delay: 5000,
+            delay: 4400,
             disableOnInteraction: false,
           },
       
