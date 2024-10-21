@@ -1016,9 +1016,320 @@ footer .boxs .box ul.follow-us li a i{
     letter-spacing: 2px;
 }
 
+@media (max-width: 430px) {
 
+    .container{
+        width: 100%;
+    }
+    header{
+        padding: 1.5rem 1rem;
+    }
+    header .container{
+        padding: 1rem;
+    }
+    header .container .logo {
+        width: 150px;
+    }
 
-@media (max-width: 1024px) {
+    header .container nav .call-me a{
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-section .container{
+        margin-top: 0 !important;
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .hero-section {
+        padding-top: 9rem;
+    }
+    .hero-section .container .left{
+        width: 100%;
+    }
+    .hero-section .container .right{
+        width: 100%;
+    }
+    
+    .course-details {
+        padding: 3rem 0 2rem;
+    }
+    .course-details h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+    .course-details p{
+        text-align: left;
+        padding: 0.6rem 0;
+    }
+    .course-details .wrapper .items {
+        margin-top: 1rem;
+    }
+    .course-details .wrapper .items .item {
+        width: 100% !important;
+        border-radius: 10px;
+    }
+    .course-details .wrapper .items .item a .thumbnail {
+        border-radius: 8px;
+    }
+    .course-details .wrapper .items .item a.duration {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 6px;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .call-back {
+       padding: 0;
+    }
+    .call-back .container {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .call-back .call-form {
+        width: 100%;
+        padding: 0rem;
+        box-shadow: none;
+    }
+    .call-back .call-form form {
+        gap: 20px;
+    }
+    .call-back .call-form button {
+        padding: 1rem 2rem;
+        border-radius: 4px;
+        font-size: 1.2rem;
+        width: 100%;
+        margin-top: 1.5rem;
+        font-weight: 500;
+    }
+    .call-back .call-text {
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .call-back .call-text h3 {
+        font-size: 1.5rem;
+    }
+    .call-back .call-text .location-text h3 {
+        font-size: 1rem;
+    }
+    .call-back .call-text h4 {
+        padding: 0.5rem 0;
+    }
+
+    .call-location .elips {
+        width: 48px !important;
+        height: 48px !important;
+    }
+    .call-location .location-text p{
+        font-size: 0.8rem;
+    }
+    .call-location .elips i {
+        font-size: 1rem;
+    }
+    .call-location {
+        margin-top: 1rem;
+        gap: 20px;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+    .call-location .call {
+        width: 100%;
+    }
+    .call-location .location {
+        width: 100%;
+    }
+    .call-location .location .elips {
+        width: 100px;
+    }
+    .follow-us {
+        margin-top: 1.5rem;
+    }
+    .our-gallery {
+        padding: 2rem 1rem;
+    }    
+    .our-gallery h2 {
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+    }
+    .our-gallery .gallery-content {
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .our-gallery .left {
+        width: 100%;
+        gap: 20px;
+    }
+    .our-gallery .left .box {
+        width: 46% !important;
+        height: 130px !important;
+        border-radius: 4px;
+    }
+    .our-gallery .right .swiper-slide {
+        height: 210px;
+    }
+    .our-gallery .right {
+        width: 100%;
+        height: 210px !important;
+    }
+    .our-gallery .swiper-pagination {
+        display: none;
+    }
+    .swiper-pagination {
+        position: absolute;
+        text-align: center;
+        transition: .3s opacity;
+        transform: translate3d(0, 0, 0);
+        z-index: 10;
+    }
+    .our-p-student {
+        padding: 1rem 0;
+    }
+    .our-p-student h2 {
+        font-size: 1.6rem;
+        text-align: left;
+        margin-bottom: 10px;
+        padding-inline: 1rem;
+    }
+    .our-p-student p{
+        text-align: left;
+        padding-inline: 1rem;
+    }
+    .our-p-student .container {
+        padding: 0 1rem 10rem 1rem;
+    }
+    .our-p-student .student-content{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .swiper-wrapper {
+        gap: 0;
+    }
+    .textmonials.swiper .riviews-section .images {
+        margin-left: 20px;
+    }
+    .our-p-student .student-content .content p {
+        font-size: 0.8rem;
+        color: #111;
+        padding-inline: 0;
+    }
+    .textmonials.swiper {
+        padding: 30px 0;
+    }
+    .textmonials .container {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .textmonials.swiper .riviews-section {
+        width: 100%;
+    }
+    .textmonials h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .textmonials p.lorem-text {
+        margin-bottom: 1.5rem;
+    }
+    .textmonials .slide-wrapper {
+        width: 100% !important;
+        padding-top: 0 !important;
+        padding-bottom: 50px;
+    }
+    .textmonials .text-slide .text-box {
+        width: 100% !important;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .swiper-pagination2 {
+        width: 80px;
+        position: absolute;
+        bottom: 35px !important;
+        left: 51% !important;
+    }
+    .textmonials .text-btn-group {
+        top: 320px;
+        left: 15px;
+        display: none;
+    }
+    .textmonials .back {
+        left: 0;
+    }
+    .textmonials .next {
+        left: 290px;
+    }
+    .map iframe {
+        width: 100%;
+        height: 300px;
+        margin-block: 1rem;
+        border-radius: 4px;
+    }
+    
+    .chanel {
+        padding: 1rem 0;
+    }
+    .chanel h3{
+        font-size: 1.5rem;
+    }
+    .chanel #moving-box .box a {
+        min-width: 210px;
+    }
+    .chanel #moving-box .box a img {
+        width: 50px;
+    }
+    .chanel #moving-box .box a p {
+        color: #111;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    footer .boxs {
+        gap: 25px;
+        flex-direction: column;
+    }
+    footer .boxs .box {
+        width: 100%;
+    }
+    footer .boxs .box h2 {
+        font-size: 1.8rem;
+        padding-bottom: 0.5rem;
+        font-weight: 500;
+    }
+    footer .boxs .box p{
+        padding-bottom: 0;
+    }
+    .footer-logo img {
+        width: 50%;
+    }
+    footer .boxs .box .mobile{
+        margin-bottom: 0;
+    }
+
+    .footer-logo{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    .footer-logo .f-logo{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-logo .sertificats{
+        width: 100%;
+    }
+    .footer-logo .sertificats .flex {
+        gap: 2px;
+    }
+    .footer-logo .sertificats img{
+        width: 50%;
+    }
+    .copy-right {
+        padding: 1rem 0;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* @media (max-width: 1024px) {
     header{
         padding: 1.5rem 1rem;
     }
@@ -1695,334 +2006,5 @@ footer .boxs .box ul.follow-us li a i{
         font-size: 1rem;
         letter-spacing: 1px;
     }
-}
-@media (max-width: 431px) {
-    #cursor{
-        display: none;
-    }
-    .container{
-        width: 100%;
-    }
-    header{
-        padding: 1.5rem 1rem;
-    }
-    header .container{
-        padding: 1rem;
-    }
-    header .container .logo{
-        width: 145px;
-    }
-    header .container nav{
-        display: none;
-    }
-    .hero-section {
-        min-height: 60vh;
-        padding-top: 9rem;
-    }
-    .hero-section .first-para{
-        font-size: 0.9rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
-    .hero-section h1 {
-        font-size: 1.4rem;
-        line-height: normal;
-    }
-    .hero-section .second-para {
-        font-size: 0.9rem;
-        padding-top: 0.5rem;
-    }
-    .hero-section .try-it-now {
-        padding: 0.8rem;
-        width: 100%;
-    }
-    .video-courses{
-        top: 100%;
-    }
-    .video-courses .container {
-        border-radius: 0px;
-        flex-direction: column;
-        border: 0;
-    }
-    .video-courses .container{
-        height: auto
-    }
-    .video-courses .container .video {
-        width: 100%;
-    }
+} */
 
-    .video-courses .container .courses {
-        padding: 0rem 1rem 1rem;
-        background: transparent;
-        width: 100%;
-    }
-    .video-courses .container .courses h2 {
-        font-size: 2rem;
-    }
-    .video-courses .container .courses ul li {
-        font-size: 1.1rem;
-        border: 1px solid #000000;
-    }
-    .video-courses .container .courses ul li:last-child{
-        margin-bottom: 0;
-    }
-    .course-details {
-        margin-top: 35rem;
-        padding: 5.5rem 0 2rem;
-    }
-    .course-details h2 {
-        font-size: 2rem;
-        text-align: left;
-    }
-    .course-details p{
-        text-align: left;
-        padding: 0.6rem 0;
-    }
-    .course-details .wrapper .items {
-        margin-top: 1rem;
-    }
-    .course-details .wrapper .items .item {
-        width: 100% !important;
-        border-radius: 10px;
-    }
-    .course-details .wrapper .items .item a .thumbnail {
-        border-radius: 8px;
-    }
-    .course-details .wrapper .items .item a.duration {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-        display: flex;
-        justify-content: space-between;
-        border-radius: 6px;
-        align-items: center;
-        margin-bottom: 0;
-    }
-    .call-back {
-       padding: 0;
-    }
-    .call-back .container {
-        gap: 20px;
-        flex-direction: column;
-    }
-
-    .call-back .call-form {
-        width: 100%;
-        padding: 0rem;
-        box-shadow: none;
-    }
-    .call-back .call-form form {
-        gap: 20px;
-    }
-    .call-back .call-form button {
-        padding: 1rem 2rem;
-        border-radius: 4px;
-        font-size: 1.2rem;
-        width: 100%;
-        margin-top: 1.5rem;
-        font-weight: 500;
-    }
-    .call-back .call-text {
-        width: 100%;
-        padding: 1rem 0;
-    }
-    .call-back .call-text h3 {
-        font-size: 1.5rem;
-    }
-    .call-back .call-text .location-text h3 {
-        font-size: 1rem;
-    }
-    .call-back .call-text h4 {
-        padding: 0.5rem 0;
-    }
-
-    .call-location .elips {
-        width: 48px !important;
-        height: 48px !important;
-    }
-    .call-location .location-text p{
-        font-size: 0.8rem;
-    }
-    .call-location .elips i {
-        font-size: 1rem;
-    }
-    .call-location {
-        margin-top: 1rem;
-        gap: 20px;
-        flex-direction: column;
-        padding-bottom: 1rem;
-    }
-    .call-location .call {
-        width: 100%;
-    }
-    .call-location .location {
-        width: 100%;
-    }
-    .call-location .location .elips {
-        width: 100px;
-    }
-    .follow-us {
-        margin-top: 1.5rem;
-    }
-    .our-gallery {
-        padding: 2rem 1rem;
-    }    
-    .our-gallery h2 {
-        font-size: 2rem;
-        padding-bottom: 1.5rem;
-    }
-    .our-gallery .gallery-content {
-        gap: 20px;
-        flex-direction: column-reverse;
-    }
-    .our-gallery .left {
-        width: 100%;
-        gap: 20px;
-    }
-    .our-gallery .left .box {
-        width: 46% !important;
-        height: 130px !important;
-        border-radius: 4px;
-    }
-    .our-gallery .right .swiper-slide {
-        height: 210px;
-    }
-    .our-gallery .right {
-        width: 100%;
-        height: 210px !important;
-    }
-    .our-gallery .swiper-pagination {
-        display: none;
-    }
-    .swiper-pagination {
-        position: absolute;
-        text-align: center;
-        transition: .3s opacity;
-        transform: translate3d(0, 0, 0);
-        z-index: 10;
-    }
-    .our-p-student {
-        padding: 1rem 0;
-    }
-    .our-p-student h2 {
-        font-size: 1.6rem;
-        text-align: left;
-        margin-bottom: 10px;
-        padding-inline: 1rem;
-    }
-    .our-p-student p{
-        text-align: left;
-        padding-inline: 1rem;
-    }
-    .our-p-student .container {
-        padding: 0 1rem 10rem 1rem;
-    }
-    .our-p-student .student-content{
-        width: 100%;
-        margin-top: 2rem;
-    }
-    .swiper-wrapper {
-        gap: 0;
-    }
-    .textmonials.swiper .riviews-section .images {
-        margin-left: 20px;
-    }
-    .our-p-student .student-content .content p {
-        font-size: 0.8rem;
-        color: #111;
-        padding-inline: 0;
-    }
-    .textmonials.swiper {
-        padding: 30px 0;
-    }
-    .textmonials .container {
-        gap: 20px;
-        flex-direction: column;
-    }
-    .textmonials.swiper .riviews-section {
-        width: 100%;
-    }
-    .textmonials h3 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-    }
-    .textmonials p.lorem-text {
-        margin-bottom: 1.5rem;
-    }
-    .textmonials .slide-wrapper {
-        width: 100% !important;
-        padding-top: 0 !important;
-        padding-bottom: 50px;
-    }
-    .textmonials .text-slide .text-box {
-        width: 100% !important;
-        margin-right: 0;
-        margin-top: 20px;
-    }
-    .swiper-pagination2 {
-        width: 80px;
-        position: absolute;
-        bottom: 35px !important;
-        left: 51% !important;
-    }
-    .textmonials .text-btn-group {
-        top: 320px;
-        left: 15px;
-        display: none;
-    }
-    .textmonials .back {
-        left: 0;
-    }
-    .textmonials .next {
-        left: 290px;
-    }
-    .map iframe {
-        width: 100%;
-        height: 300px;
-        margin-block: 1rem;
-        border-radius: 4px;
-    }
-    
-    .chanel {
-        padding: 1rem 0;
-    }
-    .chanel h3{
-        font-size: 1.5rem;
-    }
-    .chanel #moving-box .box a {
-        min-width: 210px;
-    }
-    .chanel #moving-box .box a img {
-        width: 50px;
-    }
-    .chanel #moving-box .box a p {
-        color: #111;
-        font-size: 1rem;
-        font-weight: 400;
-    }
-    footer .boxs {
-        gap: 25px;
-        flex-direction: column;
-    }
-    footer .boxs .box {
-        width: 100%;
-    }
-    footer .boxs .box h2 {
-        font-size: 1.8rem;
-        padding-bottom: 0.5rem;
-        font-weight: 500;
-    }
-    footer .boxs .box p{
-        padding-bottom: 0;
-    }
-    .footer-logo img {
-        width: 50%;
-    }
-    footer .boxs .box .mobile{
-        margin-bottom: 0;
-    }
-    .copy-right {
-        padding: 1rem 0;
-        font-size: 1rem;
-        letter-spacing: 1px;
-    }
-}
