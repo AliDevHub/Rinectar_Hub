@@ -345,6 +345,10 @@ header .container nav .call-me a:hover{
     font-weight: 500;
 }
 
+.text-white{
+    color: #fff;
+}
+
 .call-location{
     margin-top: 2rem;
     gap: 30px;
