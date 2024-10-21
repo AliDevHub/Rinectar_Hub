@@ -11,20 +11,11 @@ html, body {
     width: 100%;
 }
 
-#cursor{
-    background: #111;
-    width: 20px;
-    height: 20px;
-    border-radius: 40px;
-    position: fixed;
-    z-index: 100;
-}
-
-
-
 body{
-    background: #d6eefa;
+    background: #000000;
     font-family:  "Poppins";
+    --heading-color: #fff;
+    --text-color: #f2f2f2;
 }
 
 .container{
@@ -47,23 +38,79 @@ body{
 
 /* ==========Header = CSS================= */
 
+.popup-sec{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background-color: #050505e9;
+}
+
+.popup-sec.hide{
+    display: none;
+}
+
+.popup-sec .form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+ .popup-sec .form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    color: #111;
+  }
+
+  .popup-sec .form-container input,
+  .popup-sec .form-container textarea,
+  .popup-sec .form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 22px;
+    border: 1px solid #ddd;
+    outline: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #111;
+    background: transparent;
+  }
+  .popup-sec .pop::placeholder {
+    color: #111 !important;
+  }
+
+  .popup-sec .form-container button {
+    background-color: #ff9020;
+    color: white;
+    cursor: pointer;
+    padding: 0.9rem;
+    transition: all 0.3s ease;
+    margin-bottom: 0;
+  }
+
+  .popup-sec .form-container button:hover {
+    background-color: #111;
+  }
+
 header{
     padding-top: 1.5rem;
     position: absolute;
     width: 100%;
     z-index: 1;
-
+    padding: 1rem;
 }
 
-header .container{
-    padding: 1.5rem;
-    background: #111;
-    border-radius: 70px;
-}
-
-header .container nav{
-    gap: 50px;
-}
 
 header .container .logo{
     width: 250px;
@@ -75,143 +122,111 @@ header .container .logo a img{
     width: 100%;
 }
 
-header .container nav ul {
-    gap: 10px;
-}
-
-header .container nav ul li a{
-    color: white;
-    font-size: 1.2rem;
-    padding: 1rem;
-    transition: all 0.3s ease;
-}
-
-header .container nav ul li a:hover{
-    color: #ff9020
-}
-
 header .container nav .call-me a{
     color: white;
-    font-size: 1.2rem;
-    padding: 1rem;
+    background: #ff9020;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.8rem 1.2rem;
+    border-radius: 50px;
+    border:  1px solid #ff9020;
+    transition: all 0.3s ease;
+}
+header .container nav .call-me a:hover{
+    background-color: #111;
+    border: 1px solid #fff;
 }
 
 /* ==========Hero-Section================== */
 
 .hero-section{
-    background-color: #ff9020;
+    background: url("/images/wallp.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
     min-height: 100vh;
     text-align: center;
-    padding-top: 13rem;
     position: relative;
 }
-
-.hero-section .first-para {
-    padding: 0.3rem 1.5rem;
-    background: #fff;
-    color: #111;
-    border-radius: 20px;
-    display: inline-block;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-transform: uppercase;
+.hero-section .container{
+    gap: 30px;
+    padding-top: 180px;
 }
-
-.hero-section h1 {
-    color: #fff;
-    padding-top: 1.5rem;
-    font-size: 4rem;
-    line-height: 70px;
-    font-weight: 600;
-    text-transform: capitalize;
+.hero-section .container .right{
+    width: 40%;
+    height: 500px;
 }
-
-.hero-section .second-para {
-    padding-top: 1rem;
-    color: #111;
-    font-size: 1.2rem;
+.hero-section .container .left{
+    width: 60%;
+    height: 500px;
 }
-
-.hero-section .try-it-now {
-    padding: 1rem 2.5rem;
-    color: #fff;
-    font-size: 1.5rem;
-    background: #222;
-    border-radius: 50px;
-    display: inline-block;
-    margin-top: 1.5rem;
-    border: 1px solid #222;
-    transition: all 0.3s ease;
-}
-.hero-section .try-it-now:hover {
-    color: #fff;
-    background: #ff9020;
-    border: 1px solid #fff;
-}
-
-.video-courses{
-    position: absolute;
+.left video{
     width: 100%;
-    top: 80%;
-}
-
-.video-courses .container{
-    height: 630px;
-    border-radius: 100px;
-    border: 5px solid #222;
-    overflow: hidden;
-    padding: 0;
-}
-
-.video-courses .container .video{
     height: 100%;
-    width: 50%;
+    border-radius: 10px;
+    padding: 1rem 0 0 0;
+    border:  1px solid #ffffff;
 }
 
-.video-courses .container .courses{
-    height: 100%;
-    width: 50%;
-    background: white;
-    text-align: left;
-    padding: 1rem 3rem ;
-}
+.hero-section .form-container {
+    background-color: #5f5f5f59;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
 
-.video-courses .container .courses h2{
-   font-size: 3rem;
-   color: #ff9020;
-   margin-bottom: 20px;
-   font-weight: 600;
-}
+  .hero-section .form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--heading-color);
+  }
+
+  .hero-section .form-container input,
+  .hero-section .form-container textarea,
+  .hero-section .form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 22px;
+    border: 1px solid #ddd;
+    outline: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+  }
+  .hero-section .form-container input,
+  .hero-section .form-container textarea,
+  ::placeholder {
+    color: #fff !important;
+  }
 
 
-.video-courses .container .courses ul li{
-   font-size: 1.5rem;
-   padding: 0.5rem 1rem;
-   border: 1px solid #ff9020;
-   margin-bottom: 10px;
-   border-radius: 30px;
-   cursor: pointer;
-   align-items: center;
-}
 
-.video-courses .container .courses ul li i{
-   font-size: 1rem;
-}
+  .hero-section .form-container button {
+    background-color: #ff9020;
+    color: white;
+    cursor: pointer;
+    padding: 0.9rem;
+    transition: all 0.3s ease;
+  }
 
-
+  .form-container button:hover {
+    background-color: #111;
+  }
 
 
 .course-details{
     width: 100%;
     padding: 5rem 0;
-    margin-top: 28rem;
-    /* background-color: #003c58; */
 }
 
 
 .course-details h2{
     font-size: 3rem;
-    color: #222;
+    color: var(--heading-color);
     text-align: center;
     font-weight: 600;
 }
@@ -220,7 +235,7 @@ header .container nav .call-me a{
     text-align: center;
     font-size: 1rem;
     padding: 1rem;
-    color: #333;
+    color: var(--text-color);
 }
 
 .course-details .wrapper .items{
@@ -250,19 +265,16 @@ header .container nav .call-me a{
 
 .course-details .wrapper .items .item a .thumbnail{
     border-radius: 14px;
-    height: 155px;
+    height: 140px;
     overflow: hidden;
     margin-bottom: 0.5rem;
 }
 
 .course-details .wrapper .items .item a .thumbnail img{
     width: 100%;
-    object-fit: cover;
     transition: all 0.3s ease;
 }
 .course-details .wrapper .items .item a .thumbnail img:hover{
-    width: 100%;
-    object-fit: cover;
     transform: scale(1.04);
 }
 
@@ -286,13 +298,14 @@ header .container nav .call-me a{
 .course-details .wrapper .items .item a.duration{
     color: #fff;
     background: #ff9020;
-    border-radius: 10px;
+    border-radius: 50px;
     font-size: 1rem;
-    text-align: left;
-    padding: 0.8rem 2rem; 
+    padding: 0.6rem 2rem; 
+    text-align: center;
     display: block;
-    margin: 1.5rem 0 1rem 0;
+    margin: 1.5rem 0 0rem 0;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .course-details .wrapper .items .item a.duration:hover{
@@ -306,13 +319,13 @@ header .container nav .call-me a{
 }
 .map iframe{
     width: 100%;
+    height: 400px;
 }
 
 
 
 .call-back{
     padding: 3rem;
-    background: #d6eefa;
 }
 
 .call-back .container{
@@ -327,8 +340,9 @@ header .container nav .call-me a{
 }
 
 .call-back .call-text h3{
-    color: #222;
+    color: var(--heading-color);
     font-size: 2.2rem;
+    font-weight: 500;
 }
 
 .call-location{
@@ -366,38 +380,38 @@ header .container nav .call-me a{
     width: 32%
 }
 .call-location .call .e-text h3{
-    color: #222;
+    color: var(--heading-color);
     font-size: 1rem;
 }
 .call-location .call .e-text p{
-    color: #333;
+    color: var(--text-color);
     font-size: 1rem;
 }
 .call-location .location-text h3{
-    color: #222;
+    color: var(--heading-color);
     font-size: 1rem;
 }
 .call-location .location-text p{
-    color: #333;
+    color: var(--text-color);
     font-size: 1rem;
 }
 
 .call-back .call-text h4{
-    color: #333;
+    color: var(--heading-color);
     font-size: 1.5rem;
     padding: 1rem 0;
     font-weight: 500;
 }
 
 .call-back .call-tex p{
-    color: #444;
+    color: var(--text-color);
     font-size: 1rem;
 }
 
 
 .call-back .call-form{
    width: 50%;
-   background: #d6eefa;
+   background: #111;
    padding: 3rem;
    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
    border-radius: 24px;
@@ -409,11 +423,17 @@ header .container nav .call-me a{
 .call-back .call-form form input{
     border: none;
     outline: none;
-    padding: 1.2rem;
-    border-radius: 4px;
+    padding: 1rem 1.2rem;
+    border-radius: 6px;
     width: 100%;
 }
+.call-back .call-form form input::placeholder{
+    color: #111 !important;
+}
 
+.call-back .call-form form textarea::placeholder{
+    color: #111 !important;
+}
 .call-back .call-form form textarea{
     border: none;
     outline: none;
@@ -432,7 +452,7 @@ header .container nav .call-me a{
     font-size: 1rem;
     display: inline-block;
     color: white;
-    margin-top: 1.3rem;
+    margin-top: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -448,7 +468,7 @@ header .container nav .call-me a{
     padding: 3rem 2rem;
 }
 .our-gallery h2{
-    color: white;
+    color: var(--heading-color);
     font-weight: 500;
     font-size: 2.5rem;
     text-align: center;
@@ -562,8 +582,7 @@ header .container nav .call-me a{
 /* ==============Textmonial-Section2 ===================== */
 
 .textmonials.swiper{
-    /* background-color: #fff; */
-    background-color: #eef7fb7a;
+    background-color: #0909097a;
     padding: 80px 0;
     position: relative;
     overflow: hidden;
@@ -628,12 +647,12 @@ header .container nav .call-me a{
 .textmonials h3{
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #222;
+    color: var(--heading-color);
 }
 .textmonials p.lorem-text{
     font-size: 1rem;
     margin-bottom: 3rem;
-    color: #666;
+    color: var(--text-color);
 }
 
 
@@ -734,17 +753,17 @@ header .container nav .call-me a{
 }
 
 .textmonials .text-profile .text-profil-content p{
-    color: #444;
+    color: var(--heading-color);
 }
 .textmonials .text-profile .text-profil-content span{
-    color: #666;
+    color: var(--text-color);
 }
 
 /* ====================Our Placement Student======================= */
 
 .our-p-student{
     padding: 2rem 0;
-    background: #fff;
+    background: #000000;
 }
 .our-p-student .container{
     overflow: hidden;
@@ -753,13 +772,13 @@ header .container nav .call-me a{
 
 .our-p-student h2{
     text-align: center;
-    color: #ff9020;
+    color: var(--heading-color);
     font-size: 2.3rem;
     font-weight: 600;
 }
 .our-p-student p{
     text-align: center;
-    color: #333;
+    color: var(--text-color);
     font-size: 1rem;
     font-weight: 400;
 }
@@ -767,10 +786,11 @@ header .container nav .call-me a{
 .our-p-student .student-content{
     width: 400px;
     height: 260px;
-    background: lavender;
+    background: #fff;
     border-radius: 24px;
     padding: 1rem;
     margin-top: 4rem;
+    box-shadow: 0 0 20px 3px rgba(255, 254, 254, 0.5);
 }
 
 .our-p-student .student-content .content{
@@ -823,10 +843,10 @@ header .container nav .call-me a{
 .chanel{
     width: 100%;
     padding: 3rem 0;
-    background: #ff9020;
+    background: #111;
 }
 .chanel h3{
-    color: #fff;
+    color: var(--heading-color);
     font-size: 2.5rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -871,7 +891,7 @@ header .container nav .call-me a{
 #left-blur {
     height: 100%;
     width: 15%;
-    background: linear-gradient(to left, transparent, #ff9020);
+    background: linear-gradient(to left, transparent, #111);
     position: absolute;
     top: 0;
     left: 0;
@@ -881,7 +901,7 @@ header .container nav .call-me a{
 #right-blur {
     height: 100%;
     width: 15%;
-    background: linear-gradient(to right, transparent, #ff9020);
+    background: linear-gradient(to right, transparent, #111);
     position: absolute;
     top: 0;
     right: 0;
@@ -923,14 +943,14 @@ footer .boxs .box .email{
 }
 footer .boxs .box h2{
     font-size: 2rem;
-    color: white;
+    color: var(--heading-color);
     padding-bottom: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 footer .boxs .box p{
     font-size: 1rem;
     color: white;
-    font-weight: 400;
+    font-weight: 300;
     padding-bottom: 1.5rem;
 }
 footer .boxs .box ul.course{
@@ -964,13 +984,27 @@ footer .boxs .box ul.follow-us li a i{
 }
 .footer-logo{
     width: 100%;
-    padding: 3rem 0;
-    text-align: center;
+    padding: 5rem 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
 }
-.footer-logo img{
-    width: 30%;
-    text-align: center;
-    opacity: 0.3;
+.footer-logo .f-logo{
+    width: 50%;
+}
+.footer-logo .f-logo img{
+    width: 70%;
+    opacity: 0.4;
+}
+
+.footer-logo .sertificats{
+    width: 50%;
+}
+.footer-logo .sertificats .flex{
+    gap: 30px;
+}
+.footer-logo .sertificats img{
+    width: 40%;
 }
 
 .copy-right{

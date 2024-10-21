@@ -5,67 +5,7 @@ const locoScroll = new LocomotiveScroll({
   getDirection: true,
 });
 
-function ourCourse() {
-  let ourcorseLists = document.querySelectorAll(".courses-lists li");
 
-  ourcorseLists.forEach(function (item) {
-    item.addEventListener("click", function (e) {
-      // Prevent default anchor behavior
-      e.preventDefault();
-
-      // Get the clicked text
-      let clickedText = e.target.innerText.trim();
-      console.log("Clicked Course:", clickedText);
-
-      // Find the corresponding course detail
-      let courseDetails = document.querySelector(".course-details .container .wrapper .items .item");
-      let courseItems = document.querySelectorAll(".course-details .item");
-      let found = false;
-
-      courseItems.forEach(function (courseItem) {
-        let heading = courseItem.querySelector(".heading").innerText.trim();
-
-        // Match the clicked course text with the course detail heading
-        if (heading === clickedText) {
-          console.log("Found Matching Course:", heading);
-
-          // Scroll smoothly to the course detail
-          locoScroll.scrollTo(courseDetails);
-
-          // Highlight the course item for visibility
-          courseItem.style.border = "2px solid #ff9020";
-          courseItem.style.scale = "1.04";
-          courseItem.style.boxShadow = "0px 0px 19px 4px #ffffff";
-          found = true;
-
-          setTimeout(() => {
-            courseItem.style.scale = "1";
-            courseItem.style.boxShadow = "0px 0px 15px 10px #5252521a";
-            courseItem.style.border = "none"; // Remove highlight after 3 seconds
-          }, 3000);
-        }
-      });
-
-      if (!found) {
-        console.warn('No matching course found!');
-      }
-    });
-  });
-}
-
-ourCourse();
-
-
-let body = document.querySelector("body");
-let cursor = document.getElementById("cursor");
-
-body.addEventListener("mousemove", (dets) => {
-    gsap.to(cursor, {
-        x:dets.x,
-        y:dets.y,
-        duration:0.3
-    })
-})
 
 function textmonialSlider() {
     new Swiper('.slide-wrapper', {
@@ -175,6 +115,33 @@ function productSlider() {
 }
 productSlider();
 
-
-
-
+function poup() {
+  const popupBox = document.querySelector(".popup-sec");
+  const form = document.querySelector('.form-container form');
+  
+  document.querySelectorAll('.duration').forEach((elem) => {
+    elem.addEventListener('click', () => {
+      popupBox.classList.toggle('hide');
+    });
+  });
+  
+  // Prevent closing when clicking inside the form container
+  document.querySelector('.form-container').addEventListener('click', (event) => {
+    event.stopPropagation();
+  });
+  
+  // Toggle popup visibility when clicking outside the form-container
+  popupBox.addEventListener('click', () => {
+    popupBox.classList.toggle('hide');
+  });
+  
+  // Handle form submission without reloading or changing position
+  form.addEventListener('submit', (event) => {
+    // event.preventDefault(); // Prevent the default form submission behavior
+  
+    // You can hide the popup after submission if needed
+    popupBox.classList.add('hide');
+  });
+  
+}
+poup()

@@ -14,8 +14,18 @@
 </head>
 
 <body>
-    <div id="cursor"></div>
-
+    <section class="popup-sec hide">
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form>
+              <input type="text" name="name" class="pop" placeholder="Your Name" required>
+              <input type="tel" name="phone" class="pop" placeholder="Your Phone Number" required>
+              <input type="email" name="email" class="pop" placeholder="Your Email" required>
+              <textarea name="message" class="pop" placeholder="Your Message" rows="5"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+    </section>
     <main>
         <!-- Header -->
         <header>
@@ -28,19 +38,8 @@
                 </div>
                 <!-- Navigation -->
                 <nav class="flex">
-                    <ul class="flex">
-                        <li><a href="">About</a></li>
-                        <li><a href="">Demo</a></li>
-                        <li><a href="">Courses</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
-
                     <div class="call-me">
-                        <a href="callto: +91 7678321714">
-                            <i class="fa-solid fa-phone"></i>
-                            <b>+91 7678321714</b>
-                        </a>
+                        <a href="callto: +91 7678321714">Call Now</a>
                     </div>
                 </nav>
             </div>
@@ -48,36 +47,23 @@
 
         <!-- Main-Content -->
         <section class="hero-section">
-            <div class="container">
-                <p class="first-para">learn how to grow your career</p>
-                <h1>Need a strong mind how to <br />grow your career</h1>
-                <p class="second-para">Start your career today with a great and strong landing page.</p>
-                <a href="" class="try-it-now">Try It Now</a>
-            </div>
-            <section class="video-courses">
-                <div class="container flex justify-content">
-                    <div class="video">
-                        <iframe width="100%" height="100%"
-                            src="https://www.youtube.com/embed/VEG2B0zNwwg?si=jmWJRxkekS39GJss"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="courses">
-                        <h2>Our Courses</h2>
-                        <ul class="courses-lists">
-                            <li class="list flex justify-content">Graphic Design</li>
-                            <li class="list flex justify-content">Web Design </li>
-                            <li class="list flex justify-content">Digital Marketing </li>
-                            <li class="list flex justify-content">Video Editing </li>
-                            <li class="list flex justify-content">Motion Graphic </li>
-                            <li class="list flex justify-content">UI/UX Design</li>
-                            <li class="list flex justify-content">Photo Editing </li>
-                            <li class="list flex justify-content">Cinematography </li>
-                        </ul>
-                    </div>
+            <div class="container flex">
+                <div class="left">
+                    <video src="video/WhatsApp Video 2024-10-21 at 12.44.51_479de19a.mp4" muted controls></video>
                 </div>
-            </section>
+                <div class="right">
+                    <div class="form-container">
+                        <h2>Contact Us</h2>
+                        <form>
+                          <input type="text" name="name" placeholder="Your Name" required>
+                          <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                          <input type="email" name="email" placeholder="Your Email" required>
+                          <textarea name="message" placeholder="Your Message" rows="5"></textarea>
+                          <button type="submit">Submit</button>
+                        </form>
+                      </div>
+                </div>
+            </div>
         </section>
 
         <section class="course-details">
@@ -94,8 +80,7 @@
                                 </div>
                                 <h3 class="heading">Graphic Design</h3>
                                 <p>Hands-on projects with personalized feedback...more </p>
-                                <a class="duration" href="">Get Details in 20s <i
-                                        class="fa-solid fa-stopwatch-20"></i></a>
+                                <a class="duration">Download Syllabus</a>
                             </a>
                         </li>
                         <li class="item">
@@ -105,8 +90,7 @@
                                 </div>
                                 <h3 class="heading">Web Design</h3>
                                 <p>Hands-on projects with personalized feedback...more </p>
-                                <a class="duration" href="">Get Details in 20s <i
-                                        class="fa-solid fa-stopwatch-20"></i></a>
+                                <a class="duration">Download Syllabus</a>
                             </a>
                         </li>
                         <li class="item">
@@ -116,8 +100,7 @@
                                 </div>
                                 <h3 class="heading">Digital Marketing</h3>
                                 <p>Hands-on projects with personalized feedback...more </p>
-                                <a class="duration" href="">Get Details in 20s <i
-                                        class="fa-solid fa-stopwatch-20"></i></a>
+                                <a class="duration">Download Syllabus</a>
                             </a>
                         </li>
                         <li class="item">
@@ -127,8 +110,7 @@
                                 </div>
                                 <h3 class="heading">Video Editing</h3>
                                 <p>Hands-on projects with personalized feedback...more </p>
-                                <a class="duration" href="">Get Details in 20s <i
-                                        class="fa-solid fa-stopwatch-20"></i></a>
+                                <a class="duration">Download Syllabus</a>
                             </a>
                         </li>
                         <li class="item">
@@ -138,8 +120,7 @@
                                 </div>
                                 <h3 class="heading">Motion Graphic</h3>
                                 <p>Hands-on projects with personalized feedback...more </p>
-                                <a class="duration" href="">Get Details in 20s <i
-                                        class="fa-solid fa-stopwatch-20"></i></a>
+                                <a class="duration">Download Syllabus</a>
                             </a>
                         </li>
                         <li class="item">
@@ -149,8 +130,7 @@
                                 </div>
                                 <h3 class="heading">UI/UX Design</h3>
                                 <p>Hands-on projects with personalized feedback...more </p>
-                                <a class="duration" href="">Get Details in 20s <i
-                                        class="fa-solid fa-stopwatch-20"></i></a>
+                                <a class="duration">Download Syllabus</a>
                             </a>
                         </li>
                         <li class="item">
@@ -160,8 +140,7 @@
                                 </div>
                                 <h3 class="heading">Photo Editing</h3>
                                 <p>Hands-on projects with personalized feedback...more </p>
-                                <a class="duration" href="">Get Details in 20s <i
-                                        class="fa-solid fa-stopwatch-20"></i></a>
+                                <a class="duration">Download Syllabus</a>
                             </a>
                         </li>
                         <li class="item">
@@ -171,8 +150,7 @@
                                 </div>
                                 <h3 class="heading">Cinematography</h3>
                                 <p>Hands-on projects with personalized feedback...more </p>
-                                <a class="duration" href="">Get Details in 20s <i
-                                        class="fa-solid fa-stopwatch-20"></i></a>
+                                <a class="duration">Download Syllabus</a>
                             </a>
                         </li>
                     </ul>
@@ -185,10 +163,10 @@
                 <div class="call-form">
                     <form action="" class="flex">
                         <input type="text" name="" id="name" placeholder="Enter Your Name">
-                        <input type="email" name="" id="email" placeholder="Enter Your Email">
                         <input type="tel" name="" id="number" placeholder="Enter Phone No.">
+                        <input type="email" name="" id="email" placeholder="Enter Your Email">
                         <textarea name="" id="" placeholder="Massage"></textarea>
-                        <button>Make Rqueast</button>
+                        <button>Download Syllabus</button>
                     </form>
                 </div>
                 <div class="call-text">
@@ -1492,7 +1470,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-logo"><a href=""><img src="images/company-logo.png" alt=""></a></div>
+                <div class="footer-logo flex">
+                    <div class="f-logo">
+                        <img src="images/company-logo.png" alt="">
+                    </div>
+                    <div class="sertificats">
+                        <div class="div-img flex">
+                        <img src="images/sertificat_1.jpg" alt="">
+                        <img src="images/sertificat_2.jpg" alt=""></div>
+                    </div>
+                </div>
             </div>
             <div class="copy-right">All Right's Reserved - for - 2024.</div>
         </footer>
